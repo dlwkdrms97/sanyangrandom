@@ -3,7 +3,7 @@ import random
 import streamlit.components.v1 as components
 
 # 0. 페이지 설정
-st.set_page_config(page_title="오늘은 누가 주인공일까?", layout="wide")
+st.set_page_config(page_title="오늘의 주인공은?", layout="wide")
 
 # 1. 디자인 (CSS)
 st.markdown("""
@@ -13,7 +13,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown("# 오늘의 당첨자 뽑기")
+st.markdown("# 오늘의 주인공 뽑기")
 
 # 화면 분할
 col_results, col_setup = st.columns([1.5, 1])
@@ -121,4 +121,5 @@ with col_results:
             }};
         </script>
         """
+
         components.html(js_code, height=550)
