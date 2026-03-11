@@ -6,6 +6,7 @@ import streamlit.components.v1 as components
 st.set_page_config(page_title="오늘의 주인공은?", layout="wide")
 
 # 1. 디자인 (CSS)
+logo_url = "https://github.com/dlwkdrms97/sanyangrandom/blob/main/school_logo.png?raw=true"
 st.markdown("""
 <style>
     .stApp { background-color: #f8f9fa; }
@@ -123,3 +124,4 @@ with col_results:
         """
 
         components.html(js_code, height=550)
+
